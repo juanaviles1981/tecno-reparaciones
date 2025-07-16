@@ -1,0 +1,69 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8fafc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar.modo-oscuro {
+    background-color: #1e293b;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .boton {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background: #3b82f6;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .boton:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+  }
+  
+  .boton:active {
+    transform: translateY(0);
+  }
+  
+  .boton-modo {
+    background: transparent;
+    color: #64748b;
+    border: 1px solid #d1d5db;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    padding: 0;
+  }
+  
+  .boton-modo:hover {
+    background: #f1f5f9;
+    border-color: #60a5fa;
+  }
+  
+  .modo-oscuro .boton-modo {
+    color: #cbd5e1;
+    border-color: #475569;
+  }
+  
+  .modo-oscuro .boton-modo:hover {
+    background: #334155;
+    border-color: #60a5fa;
+  }
+  
